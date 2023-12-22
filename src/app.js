@@ -19,4 +19,13 @@ app.use(express.static("public"));
 // create secure cookies(CRUD) system which is only accessible by the server
 app.use(cookieParser());
 
+
+
+// routes import 
+import userRouter from "./routes/user.routes.js";
+
+
+//routes declaration
+app.use("/api/v1/users", userRouter); // not app.get or app.post
+
 export { app };
