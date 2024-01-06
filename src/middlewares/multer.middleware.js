@@ -1,3 +1,4 @@
+import multer from "multer";
 
 const storage = multer.diskStorage({
     //here we get req, and file. where i have access of req by nature. But file is not processed by express
